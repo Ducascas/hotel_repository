@@ -1,16 +1,19 @@
 # hotel_app
 
-A new Flutter testing project.
+Приложение по бронированию отелей
 
-## Getting Started
+## Описание
 
-This project is a starting point for a Flutter application.
+Приложение по бронированию отелей. 
+Реализовано в 4 страницах, в каждой из которых есть отдельный BLoC.
+Описание страниц: 
+1. Страница с выбранным отелем, информацией о нем и возможностью выбрать номер.
+2. Страница с выбором номера, информацией о нем и возможностью забронировать.
+3. Страница с забронированным номером, с возможностью добавить человека в список.
+   А также сумма заказа и возможностью оплатить заказ.
 
-A few resources to get you started if this is your first Flutter project:
+## Особенности
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Приложение использует BLoC для управления состоянием приложения.
+- Блочные модели, представляющие данные, используются для передачи данных между BLoC.
+- Для работы с API используется Retrofit, Dio.
