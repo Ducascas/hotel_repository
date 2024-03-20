@@ -1,12 +1,6 @@
 import 'package:dartz/dartz.dart';
-
-import '../../../../core/error/exception.dart';
-import '../../../../core/error/failure.dart';
-import '../../../../core/platform/network_info.dart';
-import '../../domain/entitites/hotel_entity.dart';
-import '../../domain/repositories/hotel_repository.dart';
-import '../datasources/remote/hotel_remote_data_source.dart';
-import '../models/hotel_model.dart';
+import 'package:hotel_app/hotelapp/core/core.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class HotelRepositoryImpl implements HotelRepository {
   final HotelRemoteDataSource remoteDataSource;

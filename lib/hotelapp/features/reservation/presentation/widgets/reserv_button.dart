@@ -1,21 +1,13 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-
-import '../../../../common/style/app_button_style.dart';
-import '../../../../common/style/app_colors.dart';
-import '../../../../common/style/app_text_style.dart';
-import '../../../paid/paid_main_screen.dart';
-import '../pages/reserv_list_screen.dart';
-import 'reserv_data/reserv_info_client.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class ReservButton extends StatelessWidget {
   final int? totalAmount;
 
-  ReservButton({super.key, required this.totalAmount});
-
-  final TextStyle? _textStyleButtonText =
-      TextStyleSetting(fontSize: 16, fontWeight: FontWeight.w500);
+  const ReservButton({super.key, required this.totalAmount});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +26,7 @@ class ReservButton extends StatelessWidget {
 
   ElevatedButton _button(BuildContext context) {
     return ElevatedButton(
-      style: AppButtonStyle().buttonStyle,
+      style: buttonStyle,
       onPressed: () {
         if (clientKey.currentState!.validate()) {
           if (formKey.currentState!.validate()) {
@@ -49,7 +41,7 @@ class ReservButton extends StatelessWidget {
       },
       child: Text(
         'Оплатить $totalAmount ₽',
-        style: _textStyleButtonText,
+        style: textStyleButtonText,
       ),
     );
   }

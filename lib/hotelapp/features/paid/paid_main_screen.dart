@@ -13,12 +13,6 @@ class PaidMainScreen extends StatefulWidget {
 }
 
 class _PaidMainScreenState extends State<PaidMainScreen> {
-  final AssetImage _imageParty = AppImages.imageParty;
-  final TextStyle _textStyleTitleBig = AppTextStyle().textStyleTitleBig;
-  final TextStyle? _textStyleTitle = AppTextStyle().textStyleTitle;
-  final TextStyle? _textStyleButtonText =
-      TextStyleSetting(fontSize: 16, fontWeight: FontWeight.w500);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,9 +44,9 @@ class _PaidMainScreenState extends State<PaidMainScreen> {
                   child: SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      style: AppButtonStyle().buttonStyle,
+                      style: buttonStyle,
                       onPressed: () => Navigator.pushNamed(context, '/hotel'),
-                      child: Text('Супер', style: _textStyleButtonText),
+                      child: Text('Супер', style: textStyleButtonText),
                     ),
                   ),
                 ),
@@ -65,24 +59,22 @@ class _PaidMainScreenState extends State<PaidMainScreen> {
   }
 
   Text _textPaid() {
-    return Text(
-        'Подтверждение заказа №${widget.randomNumber} может занять некоторое время (от 1 часа до суток). Как только мы получим ответ от туроператора, вам на почту придет уведомление.',
-        style: _textStyleTitle,
-        textAlign: TextAlign.center);
+    return Text(AppConstants.textSubmit(widget.randomNumber),
+        style: textStyleTitle, textAlign: TextAlign.center);
   }
 
   Text _textBig() =>
-      Text('Ваш заказ принят в работу', style: _textStyleTitleBig);
+      Text(AppConstants.textSuccess, style: textStyleTitleBig);
 
   Container _image() {
     return Container(
       height: 44,
       width: 44,
       decoration: AppSettings.paidImageParty,
-      child: Image(
+      child: const Image(
         width: 32,
         height: 32,
-        image: _imageParty,
+        image: AppImages.imageParty,
       ),
     );
   }

@@ -1,24 +1,17 @@
 import 'package:flutter/material.dart';
-
-import '../../../../common/style/app_colors.dart';
-import '../../../../common/style/app_text_style.dart';
-import '../../domain/entitites/room_entity.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class RoomNameWidget extends StatelessWidget {
   final RoomEntity? room;
 
-  RoomNameWidget({super.key, required this.room});
-
-  final TextStyle? _textStyleName = TextStyleSetting(
-      fontSize: 22,
-      fontWeight: FontWeight.w500,
-      color: AppColors.titleNameColor);
+  const RoomNameWidget({super.key, required this.room});
 
   @override
   Widget build(BuildContext context) {
     return Text(
       '${room?.name}',
-      style: _textStyleName,
+      style: textStyleName,
     );
   }
 }

@@ -1,6 +1,4 @@
-import '../../domain/entitites/rooms_list_entity.dart';
-import 'room_model.dart';
-
+import 'package:hotel_app/hotelapp/features/features.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'rooms_list_model.g.dart';

@@ -108,7 +108,7 @@ class _ReservListScreenState extends State<ReservListScreen> {
 
   ElevatedButton _buttonRowAdd() {
     return ElevatedButton(
-      style: AppButtonStyle().buttonTouristStyle,
+      style: buttonTouristStyle,
       onPressed: _addTouristList,
       child: _imageAdd(),
     );
@@ -126,7 +126,7 @@ class _ReservListScreenState extends State<ReservListScreen> {
     return Expanded(
       child: Text(
         'Добавить туриста',
-        style: AppTextStyle().textStyleTitleBig,
+        style: textStyleTitleBig,
       ),
     );
   }

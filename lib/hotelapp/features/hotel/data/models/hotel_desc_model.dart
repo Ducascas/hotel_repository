@@ -1,5 +1,4 @@
-import '../../domain/entitites/hotel_description_entity.dart';
-
+import 'package:hotel_app/hotelapp/features/features.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'hotel_desc_model.g.dart';

@@ -1,7 +1,6 @@
 // ignore_for_file: overridden_fields
 
-import '../../domain/entitites/hotel_entity.dart';
-
+import 'package:hotel_app/hotelapp/features/features.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 import 'hotel_desc_model.dart';
@@ -10,7 +9,6 @@ part 'hotel_model.g.dart';
 
 @JsonSerializable()
 class HotelModel extends HotelEntity {
-
   @override
   @JsonKey(name: 'minimal_price')
   final int? minimalPrice;

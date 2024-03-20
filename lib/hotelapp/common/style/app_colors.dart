@@ -23,12 +23,14 @@ abstract class AppColors {
   static const Color errorTextFieldColor = Color.fromRGBO(235, 87, 87, 0.15);
   static const Color grey200 = Color(0xFFE0E0E0);
   static const Color paidLineColor = Color(0xFFE8E9EC);
-}
 
-List<Color> iconImageBarColor = const [
-  Color(0xFF000000),
-  Color(0x38000000),
-  Color(0x2B000000),
-  Color(0x1A000000),
-  Color(0x0D000000)
-];
+  static const List<Color> iconImageBarColor = [
+    Color(0xFF000000),
+    Color(0x38000000),
+    Color(0x2B000000),
+    Color(0x1A000000),
+    Color(0x0D000000)
+  ];
+
+  static iconColor(int index) => iconImageBarColor[index];
+}

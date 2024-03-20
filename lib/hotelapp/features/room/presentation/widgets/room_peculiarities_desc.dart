@@ -1,19 +1,11 @@
 import 'package:flutter/material.dart';
-
-import '../../../../common/style/app_colors.dart';
-import '../../../../common/style/app_text_style.dart';
-import '../../domain/entitites/room_entity.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class RoomPeculiarities extends StatelessWidget {
   final RoomEntity? room;
 
-  RoomPeculiarities({super.key, this.room});
-
-  final TextStyle _textStylePeculiarities = TextStyleSetting(
-          fontSize: 16,
-          fontWeight: FontWeight.w500,
-          color: AppColors.greyColor) ??
-      const TextStyle();
+  const RoomPeculiarities({super.key, this.room});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +14,7 @@ class RoomPeculiarities extends StatelessWidget {
 
     Text peculiaritiesText(int index) => Text(
           peculiaritiesValue[index],
-          style: _textStylePeculiarities,
+          style: textStylePeculiarities,
         );
 
     if (peculiaritiesLength > 0) {
