@@ -2,33 +2,19 @@ import 'package:flutter/material.dart';
 
 import 'package:hotel_app/hotelapp/common/common.dart';
 
+List<MenuRowData> menuRows = [
+  MenuRowData(iconImage: AppImages.imageEmojiHappy, text: 'Удобства'),
+  MenuRowData(iconImage: AppImages.imageCloseSquare, text: 'Что включено'),
+  MenuRowData(iconImage: AppImages.imageTickSquare, text: 'Что не включено'),
+];
+
 class MenuList extends StatelessWidget {
-  MenuList({super.key});
-
-  List<MenuRowData> menuRows = [
-    MenuRowData(iconImage: AppImages.imageEmojiHappy, text: 'Удобства'),
-    MenuRowData(iconImage: AppImages.imageCloseSquare, text: 'Что включено'),
-    MenuRowData(iconImage: AppImages.imageTickSquare, text: 'Что не включено'),
-  ];
-
-  final TextStyle? textStyleMainSetting = TextStyleSetting(
-          fontSize: 16,
-          fontWeight: FontWeight.w500,
-          color: AppColors.textMenuColor) ??
-      const TextStyle();
-
-  final TextStyle? textStyleSubSetting = TextStyleSetting(
-          fontSize: 14,
-          fontWeight: FontWeight.w500,
-          color: AppColors.greyColor) ??
-      const TextStyle();
+  const MenuList({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      // width: 343,
-      // height: 184,
       padding: const EdgeInsets.all(15),
       decoration: AppSettings.menuListDecoration,
       child: Column(

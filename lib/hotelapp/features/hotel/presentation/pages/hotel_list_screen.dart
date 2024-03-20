@@ -1,19 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-
 import 'package:hotel_app/hotelapp/common/common.dart';
-import 'package:hotel_app/hotelapp/features/hotel/hotel.dart';
-import '../../../../common/widgets/hotel_button.dart';
-import '../widgets/hotel_description/hotel_menu_list_widget.dart';
-import '../widgets/hotel_description/hotel_peculiarities_desc.dart';
-import '../widgets/hotel_description/hotel_text_desc.dart';
-import '../widgets/hotel_info/hotel_address_widget.dart';
-import '../widgets/hotel_info/hotel_image_widget.dart';
-import '../widgets/hotel_info/hotel_name_widget.dart';
-import '../widgets/hotel_info/hotel_navigator_bar.dart';
-import '../widgets/hotel_info/hotel_price_widget.dart';
-import '../widgets/hotel_info/hotel_rating_widget.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class HotelListScreen extends StatelessWidget {
   const HotelListScreen({super.key});
@@ -35,7 +23,7 @@ class HotelListScreen extends StatelessWidget {
           );
         }
         return ListView(
-          padding:  EdgeInsets.zero,
+          padding: EdgeInsets.zero,
           children: [
             Container(height: 44, color: AppColors.cellBackgroundColor),
             _hotelInfo(hotel: hotel),

@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../common/utils/app_formatter.dart';
-import '../../../../../common/utils/app_settings.dart';
-import '../../../../../common/style/app_text_style.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
 
 GlobalKey<FormState> clientKey = GlobalKey<FormState>();
 
@@ -26,7 +23,7 @@ class _ReservInfoClientState extends State<ReservInfoClient> {
 
   bool isError = false;
 
-  final _textStyle = AppTextStyle().textStyleLabelClient;
+  final _textStyle = textStyleLabelClient;
 
   final _decorationError = AppSettings.errorFieldForm;
   final _decoration = AppSettings.boxTextFieldForm;
@@ -73,7 +70,7 @@ class _ReservInfoClientState extends State<ReservInfoClient> {
       controller: _phoneController,
       inputFormatters: [maskPhoneFormatter],
       decoration: inputPhoneDecoration(),
-      style: AppTextStyle().textStyleTextField,
+      style: textStyleTextField,
       validator: validatePhone,
     );
   }
@@ -123,12 +120,12 @@ class _ReservInfoClientState extends State<ReservInfoClient> {
 
   Text _textTitle() => Text(
         'Информация о покупателе',
-        style: AppTextStyle().textStyleTitleBig,
+        style: textStyleTitleBig,
       );
 
   Text _textInformation() => Text(
         'Эти данные никому не передаются. После оплаты мы вышли чек на указанный вами номер и почту',
-        style: AppTextStyle().textStyleInformation,
+        style: textStyleInformation,
       );
 
   String? validateEmail(String? value) {

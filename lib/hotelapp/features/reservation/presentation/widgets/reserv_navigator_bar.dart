@@ -28,22 +28,17 @@ class ReservNavigatorBar extends StatelessWidget {
         ));
   }
 
-  final TextStyle? _textStyle = TextStyleSetting(
-      fontSize: 18,
-      fontWeight: FontWeight.w500,
-      color: AppColors.titleNameColor);
-
   Expanded _navigatorName() => Expanded(
           child: Center(
         child: Text(
           'Бронирование',
-          style: _textStyle,
+          style: textSuccessStyle,
         ),
       ));
 
   ElevatedButton _buttonPop(BuildContext context) {
     return ElevatedButton(
-        style: AppButtonStyle().buttonBackStyle,
+        style: buttonBackStyle,
         onPressed: () {
           Navigator.pop(context);
         },

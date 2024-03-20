@@ -1,29 +1,19 @@
-import 'dart:convert';
-import 'package:http/http.dart' as http;
+import 'package:dio/dio.dart' hide Headers;
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
+import 'package:retrofit/retrofit.dart';
 
-import 'package:hotel_app/hotelapp/core/core.dart';
-import 'package:hotel_app/hotelapp/features/hotel/hotel.dart';
+part 'hotel_remote_data_source.g.dart';
 
+@RestApi(baseUrl: textApi)
 abstract class HotelRemoteDataSource {
+  factory HotelRemoteDataSource(Dio dio, {String baseUrl}) =
+      _HotelRemoteDataSource;
+
+  @GET('')
+  @Headers(<String, dynamic>{
+    'Content-Type': headersType,
+    'Custom-Header': headersSet,
+  })
   Future<HotelModel> getHotels();
-}
-
-class HotelRemoteDataSourceImpl implements HotelRemoteDataSource {
-  final http.Client client;
-
-  HotelRemoteDataSourceImpl({required this.client});
-
-  @override
-  Future<HotelModel> getHotels() async {
-    String url = 'https://run.mocky.io/v3/35e0d18e-2521-4f1b-a575-f0fe366f66e3';
-    final response = await client
-        .get(Uri.parse(url), headers: {'Content-Type': 'application/json'});
-
-    if (response.statusCode == 200) {
-      final hotels = jsonDecode(response.body);
-      return HotelModel.fromJson(hotels);
-    } else {
-      throw ServerException();
-    }
-  }
 }

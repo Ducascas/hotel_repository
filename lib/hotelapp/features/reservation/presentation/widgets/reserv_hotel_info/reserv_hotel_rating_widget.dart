@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hotel_app/hotelapp/common/common.dart';
-
-import '../../../domain/entitites/reserv_entity.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class ReservRatingWidget extends StatelessWidget {
   final ReservEntity? reserv;
 
-  ReservRatingWidget({super.key, this.reserv});
-
-  final TextStyle? _textStyleRating = TextStyleSetting(
-      fontSize: 16,
-      fontWeight: FontWeight.w500,
-      color: AppColors.ratingTextColor);
+  const ReservRatingWidget({super.key, this.reserv});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +34,7 @@ class ReservRatingWidget extends StatelessWidget {
   Text _textRating() {
     return Text(
       '${reserv?.horating} ${reserv?.ratingName}',
-      style: _textStyleRating,
+      style: textStyleRating,
     );
   }
 }

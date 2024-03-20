@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
 
-import '../../../../../common/app_button_style.dart';
-import '../../../../../common/app_colors.dart';
-import '../../../../../common/app_images.dart';
-import '../../../../../common/app_settings.dart';
-import '../../../../../common/app_text_style.dart';
 import 'text_form_field.dart';
 
 class ReservInfoTourist extends StatefulWidget {
@@ -55,7 +51,6 @@ class _ReservInfoTouristState extends State<ReservInfoTourist> {
           child: Column(
             children: [
               _rowButton(),
-              // const SizedBox(height: 20),
               _infoColumn(labelTextListEmpty),
             ],
           ),
@@ -66,13 +61,11 @@ class _ReservInfoTouristState extends State<ReservInfoTourist> {
   }
 
   Row _rowButton() {
-    final _styleButton = AppButtonStyle().buttonTouristStyle;
-
     return Row(
       children: [
         _titleText(),
         ElevatedButton(
-          style: _styleButton,
+          style: buttonTouristStyle,
           onPressed: _listInfo,
           child: _isButton! ? _imageIcon(_iconUp) : _imageIcon(_iconDown),
         ),
@@ -92,7 +85,7 @@ class _ReservInfoTouristState extends State<ReservInfoTourist> {
     return Expanded(
       child: Text(
         '${widget.indexListTourist} турист',
-        style: AppTextStyle().textStyleTitleBig,
+        style: textStyleTitleBig,
       ),
     );
   }

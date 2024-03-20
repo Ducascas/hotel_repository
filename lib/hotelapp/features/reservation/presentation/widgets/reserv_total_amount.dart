@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../../../common/utils/app_settings.dart';
-import '../../../../common/style/app_text_style.dart';
-import '../../domain/entitites/reserv_entity.dart';
-import 'reserv_button.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class ReservTotalAmount extends StatelessWidget {
   ReservEntity? reserv;
@@ -18,9 +15,8 @@ class ReservTotalAmount extends StatelessWidget {
 
     final int totalAmount = tourPrice + fuelCharge + serviceCharge;
 
-    final TextStyle? _textStyle = AppTextStyle().textStyleReservData;
-    final TextStyle? _textStyleTotalAmount =
-        AppTextStyle().textStyleTotalAmount;
+    final TextStyle? _textStyle = textStyleReservData;
+    final TextStyle? _textStyleTotalAmount = textStyleTotalAmount;
 
     List<TotalAmount> totalAmountList = [
       TotalAmount(
@@ -85,8 +81,7 @@ class _reservTotalAmount extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: Text(totalAmount.titleName,
-                  style: AppTextStyle().textStyleTitle),
+              child: Text(totalAmount.titleName, style: textStyleTitle),
             ),
             Text('${totalAmount.reservAmount} ₽', style: totalAmount.textStyle),
           ],

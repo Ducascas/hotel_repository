@@ -4,7 +4,7 @@ import 'package:hotel_app/hotelapp/common/common.dart';
 class RoomDetailButton extends StatelessWidget {
   RoomDetailButton({super.key});
 
-  final ButtonStyle buttonStyle = AppButtonStyle().buttonRoomDetailStyle;
+  final ButtonStyle buttonStyle = buttonRoomDetailStyle;
 
   @override
   Widget build(BuildContext context) {
@@ -16,16 +16,12 @@ class RoomDetailButton extends StatelessWidget {
   }
 
   Row _insideButton() {
-    final TextStyle _textStyle =
-        TextStyleSetting(fontSize: 16, fontWeight: FontWeight.w500) ??
-            const TextStyle();
-
     return Row(
       children: [
         Expanded(
           child: Text(
             'Подробнее о номере',
-            style: _textStyle,
+            style: textStyleButtonText,
           ),
         ),
         const Icon(Icons.keyboard_arrow_right),

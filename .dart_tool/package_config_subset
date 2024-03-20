@@ -242,6 +242,10 @@ pool
 2.12
 file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/pool-1.5.1/
 file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/pool-1.5.1/lib/
+protobuf
+2.19
+file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/protobuf-3.1.0/
+file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/protobuf-3.1.0/lib/
 provider
 2.12
 file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.2/
@@ -254,6 +258,14 @@ pubspec_parse
 2.18
 file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/pubspec_parse-1.2.3/
 file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/pubspec_parse-1.2.3/lib/
+retrofit
+2.17
+file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/retrofit-4.1.0/
+file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/retrofit-4.1.0/lib/
+retrofit_generator
+2.19
+file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/retrofit_generator-8.1.0/
+file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/retrofit_generator-8.1.0/lib/
 shelf
 2.17
 file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/shelf-1.4.1/
@@ -310,6 +322,10 @@ timing
 2.14
 file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/timing-1.0.1/
 file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/timing-1.0.1/lib/
+tuple
+2.17
+file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/tuple-2.0.2/
+file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/tuple-2.0.2/lib/
 typed_data
 2.17
 file:///C:/Users/vp051/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.3.2/

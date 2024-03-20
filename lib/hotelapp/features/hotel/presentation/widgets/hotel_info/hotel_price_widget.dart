@@ -1,26 +1,11 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../common/style/app_colors.dart';
-import '../../../domain/entitites/hotel_entity.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class HotelPriceWidget extends StatelessWidget {
   final HotelEntity? hotel;
 
   const HotelPriceWidget({super.key, required this.hotel});
-
-  final TextStyle _textStylePrice = const TextStyle(
-    fontSize: 30,
-    fontWeight: FontWeight.w600,
-    fontFamily: 'SFProDisplay',
-    color: AppColors.titlePriceColor,
-  );
-
-  final TextStyle _textStylePriceForIt = const TextStyle(
-    fontSize: 16,
-    fontWeight: FontWeight.w400,
-    fontFamily: 'SFProDisplay',
-    color: AppColors.greyColor,
-  );
 
   @override
   Widget build(BuildContext context) {
@@ -39,14 +24,14 @@ class HotelPriceWidget extends StatelessWidget {
 
   Padding _minimalPrice(int? minimalPrice) => Padding(
         padding: const EdgeInsets.only(bottom: 16),
-        child: Text('от $minimalPrice ₽', style: _textStylePrice),
+        child: Text('от $minimalPrice ₽', style: textStylePrice),
       );
 
   Padding _priceForIt(String? priceForIt) => Padding(
         padding: const EdgeInsets.only(bottom: 19),
         child: Text(
           '$priceForIt',
-          style: _textStylePriceForIt,
+          style: textStyleTitle,
         ),
       );
 }

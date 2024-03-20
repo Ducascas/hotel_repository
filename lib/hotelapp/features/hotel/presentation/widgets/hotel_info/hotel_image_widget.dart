@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-
-import '../../../../../common/style/app_colors.dart';
-import '../../../../../common/utils/app_settings.dart';
-import '../../../domain/entitites/hotel_entity.dart';
+import 'package:hotel_app/hotelapp/common/style/style.dart';
+import 'package:hotel_app/hotelapp/common/utils/app_settings.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class HotelImageWidgets extends StatelessWidget {
   final HotelEntity? hotel;
@@ -13,7 +12,7 @@ class HotelImageWidgets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 375, //343,
+      width: 375,
       height: 257,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(15)),
       child: Center(
@@ -94,21 +93,9 @@ class _imageBoxState extends State<_imageBox> {
   }
 
   ElevatedButton _buttonIcon(int page) {
-    List<Color> iconColor = iconImageBarColor;
-
-    ButtonStyle _buttonStyle = ButtonStyle(
-      backgroundColor: MaterialStateProperty.all(iconColor[page]),
-      minimumSize: MaterialStateProperty.all(const Size(7, 7)),
-      fixedSize: MaterialStateProperty.all(const Size(7, 7)),
-      maximumSize: MaterialStateProperty.all(const Size(7, 7)),
-      elevation: MaterialStateProperty.all(0),
-      shape: MaterialStateProperty.all(
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
-    );
-
     return ElevatedButton(
         onPressed: () => controller.animateToPage(page),
-        style: _buttonStyle,
+        style: buttonIconStyle(page),
         child: null);
   }
 }

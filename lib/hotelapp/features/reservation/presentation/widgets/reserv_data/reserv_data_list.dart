@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../common/utils/app_settings.dart';
-import '../../../../../common/style/app_text_style.dart';
-import '../../../domain/entitites/reserv_entity.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class ReservDataList extends StatelessWidget {
   ReservEntity? reserv;
@@ -27,7 +25,6 @@ class ReservDataList extends StatelessWidget {
     ];
 
     return Container(
-      // height: 280,
       padding: const EdgeInsets.only(top: 16, left: 16, right: 16),
       decoration: AppSettings.boxCircularDecoration,
       child: Column(
@@ -49,7 +46,7 @@ class ReservData {
 class _reservRowData extends StatelessWidget {
   final ReservData reservData;
 
-  _reservRowData({super.key, required this.reservData});
+  const _reservRowData({super.key, required this.reservData});
 
   @override
   Widget build(BuildContext context) {
@@ -57,13 +54,10 @@ class _reservRowData extends StatelessWidget {
       children: [
         Row(
           children: [
-            Expanded(
-                child: Text(reservData.titleName,
-                    style: AppTextStyle().textStyleTitle)),
+            Expanded(child: Text(reservData.titleName, style: textStyleTitle)),
             Expanded(
                 flex: 2,
-                child: Text(reservData.reservData,
-                    style: AppTextStyle().textStyleReservData)),
+                child: Text(reservData.reservData, style: textStyleReservData)),
           ],
         ),
         const SizedBox(height: 16)

@@ -1,8 +1,7 @@
 // ignore_for_file: overridden_fields
 
+import 'package:hotel_app/hotelapp/features/features.dart';
 import 'package:json_annotation/json_annotation.dart';
-
-import '../../domain/entitites/reserv_entity.dart';
 
 part 'reserv_model.g.dart';
 

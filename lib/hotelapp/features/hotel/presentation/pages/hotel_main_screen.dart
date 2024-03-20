@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'hotel_list_screen.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class HotelMainScreen extends StatelessWidget {
   const HotelMainScreen({super.key});

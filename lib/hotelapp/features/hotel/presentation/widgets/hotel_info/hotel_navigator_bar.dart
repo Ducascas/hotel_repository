@@ -1,22 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
 
 class HotelNavigatorBar extends StatelessWidget {
-  HotelNavigatorBar({super.key});
+  const HotelNavigatorBar({super.key});
 
   final String _titleName = 'Отель';
-  final TextStyle _textStyleName = const TextStyle(
-    fontSize: 18,
-    fontWeight: FontWeight.w500,
-    fontFamily: 'SFProDisplay',
-  );
-
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 44,
       child: Center(
-        child: Text(_titleName, style: _textStyleName),
+        child: Text(_titleName, style: textStyleNavigatorName),
       ),
     );
   }

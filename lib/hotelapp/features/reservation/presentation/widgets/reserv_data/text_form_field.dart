@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../common/utils/app_settings.dart';
-import '../../../../../common/style/app_text_style.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
 
 class ReservTextFormField extends StatefulWidget {
   final String labelText;
@@ -22,13 +20,12 @@ class _ReservTextFormFieldState extends State<ReservTextFormField> {
     super.dispose();
   }
 
-  final _textStyle = AppTextStyle().textStyleTextField;
-  final _textLabelStyle = AppTextStyle().textStyleLabelClient;
+  final _textStyle = textStyleTextField;
+  final _textLabelStyle = textStyleLabelClient;
 
   final _decorationError = AppSettings.errorFieldForm;
   final _decoration = AppSettings.boxTextFieldForm;
   bool isError = false;
-
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +59,7 @@ class _ReservTextFormFieldState extends State<ReservTextFormField> {
   String? _validateForm(String? value) {
     if (value == null || value.isEmpty) {
       setState(() {
-        isError =! isError;
+        isError = !isError;
       });
       return 'Некорректные данные';
     } else {

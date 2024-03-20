@@ -1,18 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:hotel_app/hotelapp/common/common.dart';
-import '../../../domain/entitites/hotel_entity.dart';
+import 'package:hotel_app/hotelapp/features/features.dart';
 
 class PeculiaritiesDesc extends StatelessWidget {
   final HotelEntity? hotel;
 
-  PeculiaritiesDesc({super.key, this.hotel});
-
-  final TextStyle _textStylePeculiarities = TextStyleSetting(
-          fontSize: 16,
-          fontWeight: FontWeight.w500,
-          color: AppColors.greyColor) ??
-      const TextStyle();
+  const PeculiaritiesDesc({super.key, this.hotel});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +16,7 @@ class PeculiaritiesDesc extends StatelessWidget {
 
     Text peculiaritiesText(int index) => Text(
           peculiaritiesValue[index],
-          style: _textStylePeculiarities,
+          style: textStylePeculiarities,
         );
 
     if (peculiaritiesLength > 0) {
