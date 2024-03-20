@@ -1,0 +1,1 @@
+export 'reserv_model.dart';

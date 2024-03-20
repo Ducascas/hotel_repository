@@ -1,17 +1,10 @@
 import 'package:flutter/material.dart';
-
-import '../../../common/app_button_style.dart';
-import '../../../common/app_colors.dart';
-import '../../../common/app_images.dart';
-import '../../../common/app_text_style.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
 
 class PaidNavigatorBar extends StatelessWidget {
-
   PaidNavigatorBar({super.key});
 
   final AssetImage iconBack = AppImages.imageIconBack;
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -41,11 +34,11 @@ class PaidNavigatorBar extends StatelessWidget {
 
   Expanded _navigatorName() => Expanded(
           child: Center(
-            child: Text(
-        'Заказ оплачен',
-        style: _textStyle,
-      ),
-          ));
+        child: Text(
+          'Заказ оплачен',
+          style: _textStyle,
+        ),
+      ));
 
   ElevatedButton _buttonPop(BuildContext context) {
     return ElevatedButton(

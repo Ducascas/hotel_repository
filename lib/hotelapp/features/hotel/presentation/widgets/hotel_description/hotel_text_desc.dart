@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_app/hotelapp/common/style/style.dart';
 
-import '../../../../../common/app_colors.dart';
 import '../../../domain/entitites/hotel_entity.dart';
 
 class TextDesc extends StatelessWidget {

@@ -1,9 +1,11 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../common/app_constant.dart';
-import '../../../../core/error/failure.dart';
-import '../../domain/usecases/get_hotels.dart';
-import 'hotel_state.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/core/core.dart';
+import 'package:hotel_app/hotelapp/features/hotel/hotel.dart';
+
+part 'hotel_state.dart';
 
 class HotelListCubit extends Cubit<HotelState> {
   final GetHotels getHotels;

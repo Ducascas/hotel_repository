@@ -1,22 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../../../../common/app_button_style.dart';
-import '../../../../common/app_colors.dart';
-import '../../../../common/app_images.dart';
-import '../../../../common/app_settings.dart';
-import '../../../../common/app_text_style.dart';
-import '../../domain/entitites/reserv_entity.dart';
-import '../cubit/reserv_cubit.dart';
-import '../cubit/reserv_state.dart';
-import '../widgets/reserv_data/reserv_data_list.dart';
-import '../widgets/reserv_data/reserv_info_client.dart';
-import '../widgets/reserv_data/reserv_info_tourist.dart';
-import '../widgets/reserv_hotel_info/reserv_hotel_address_widget.dart';
-import '../widgets/reserv_hotel_info/reserv_hotel_name_widget.dart';
-import '../widgets/reserv_hotel_info/reserv_hotel_rating_widget.dart';
-import '../widgets/reserv_navigator_bar.dart';
-import '../widgets/reserv_total_amount.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/features/reservation/reservation.dart';
 
 GlobalKey<FormState> formKey = GlobalKey<FormState>();
 

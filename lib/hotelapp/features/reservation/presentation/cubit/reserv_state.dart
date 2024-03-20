@@ -1,7 +1,4 @@
-import 'package:equatable/equatable.dart';
-
-import '../../domain/entitites/reserv_entity.dart';
-
+part of 'reserv_cubit.dart';
 
 abstract class ReservState extends Equatable {
   const ReservState();

@@ -1,18 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/features/room/room.dart';
 
-import '../../../../common/app_colors.dart';
-import '../../../../common/app_settings.dart';
-import '../../domain/entitites/room_entity.dart';
-import '../cubit/room_cubit.dart';
-import '../cubit/room_state.dart';
-import '../widgets/room_button.dart';
-import '../widgets/room_detail_button.dart';
-import '../widgets/room_image_widget.dart';
-import '../widgets/room_name_widget.dart';
-import '../widgets/room_navigator_bar.dart';
-import '../widgets/room_peculiarities_desc.dart';
-import '../widgets/room_price_widget.dart';
+
 
 class RoomListScreen extends StatelessWidget {
   final String? hotelName;

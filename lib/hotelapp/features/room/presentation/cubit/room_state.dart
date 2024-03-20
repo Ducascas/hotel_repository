@@ -1,6 +1,4 @@
-import 'package:equatable/equatable.dart';
-
-import '../../domain/entitites/rooms_list_entity.dart';
+part of 'room_cubit.dart';
 
 abstract class RoomState extends Equatable {
   const RoomState();
