@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/app_colors.dart';
-import '../../../../common/app_text_style.dart';
+import '../../../../common/style/app_colors.dart';
+import '../../../../common/style/app_text_style.dart';
 import '../../domain/entitites/room_entity.dart';
 
 class RoomNameWidget extends StatelessWidget {

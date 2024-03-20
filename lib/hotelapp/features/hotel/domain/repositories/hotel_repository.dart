@@ -1,7 +1,8 @@
 import 'package:dartz/dartz.dart';
+import 'package:hotel_app/hotelapp/core/core.dart';
+import 'package:hotel_app/hotelapp/features/hotel/hotel.dart';
 
-import '../../../../core/error/failure.dart';
-import '../entitites/hotel_entity.dart';
+
 
 
 abstract class HotelRepository {

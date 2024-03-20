@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../common/app_colors.dart';
-import '../../../../common/app_settings.dart';
-import '../../domain/entitites/hotel_entity.dart';
-import '../cubit/hotel_cubit.dart';
-import '../cubit/hotel_state.dart';
-import '../widgets/hotel_button/hotel_button.dart';
+
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/features/hotel/hotel.dart';
+import '../../../../common/widgets/hotel_button.dart';
 import '../widgets/hotel_description/hotel_menu_list_widget.dart';
 import '../widgets/hotel_description/hotel_peculiarities_desc.dart';
 import '../widgets/hotel_description/hotel_text_desc.dart';

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
-import '../../../../../common/app_colors.dart';
-import '../../../../../common/app_settings.dart';
+import '../../../../../common/style/app_colors.dart';
+import '../../../../../common/utils/app_settings.dart';
 import '../../../domain/entitites/hotel_entity.dart';
 
 class HotelImageWidgets extends StatelessWidget {

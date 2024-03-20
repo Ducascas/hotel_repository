@@ -2,9 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import '../../../../common/app_button_style.dart';
-import '../../../../common/app_colors.dart';
-import '../../../../common/app_text_style.dart';
+import '../../../../common/style/app_button_style.dart';
+import '../../../../common/style/app_colors.dart';
+import '../../../../common/style/app_text_style.dart';
 import '../../../paid/paid_main_screen.dart';
 import '../pages/reserv_list_screen.dart';
 import 'reserv_data/reserv_info_client.dart';

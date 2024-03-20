@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../common/app_colors.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
 import '../../../domain/entitites/hotel_entity.dart';
 
 class HotelNameWidget extends StatelessWidget {

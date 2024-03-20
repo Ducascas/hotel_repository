@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
 
-import '../../../../../common/app_colors.dart';
-import '../../../../../common/app_settings.dart';
-import '../../../../../common/app_text_style.dart';
 import '../../../domain/entitites/reserv_entity.dart';
 
 class ReservRatingWidget extends StatelessWidget {

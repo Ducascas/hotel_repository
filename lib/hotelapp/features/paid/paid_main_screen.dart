@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
 
-import '../../common/app_button_style.dart';
-import '../../common/app_colors.dart';
-import '../../common/app_images.dart';
-import '../../common/app_settings.dart';
-import '../../common/app_text_style.dart';
 import 'widgets/paid_navigator_bar.dart';
 
 class PaidMainScreen extends StatefulWidget {
   final int? randomNumber;
 
-  PaidMainScreen({super.key, this.randomNumber});
+  const PaidMainScreen({super.key, this.randomNumber});
 
   @override
   State<PaidMainScreen> createState() => _PaidMainScreenState();

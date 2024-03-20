@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/app_button_style.dart';
-import '../../../../common/app_colors.dart';
-import '../../../../common/app_images.dart';
-import '../../../../common/app_text_style.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
 
 class ReservNavigatorBar extends StatelessWidget {
   ReservNavigatorBar({super.key});

@@ -1,6 +1,4 @@
-import 'package:equatable/equatable.dart';
-
-import '../../domain/entitites/hotel_entity.dart';
+part of 'hotel_cubit.dart';
 
 abstract class HotelState extends Equatable {
   const HotelState();

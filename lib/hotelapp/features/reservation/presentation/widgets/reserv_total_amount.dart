@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/app_settings.dart';
-import '../../../../common/app_text_style.dart';
+import '../../../../common/utils/app_settings.dart';
+import '../../../../common/style/app_text_style.dart';
 import '../../domain/entitites/reserv_entity.dart';
 import 'reserv_button.dart';
 

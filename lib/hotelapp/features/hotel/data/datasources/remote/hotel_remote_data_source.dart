@@ -1,8 +1,8 @@
 import 'dart:convert';
-
-import '../../../../../core/error/exception.dart';
-import '../../models/hotel_model.dart';
 import 'package:http/http.dart' as http;
+
+import 'package:hotel_app/hotelapp/core/core.dart';
+import 'package:hotel_app/hotelapp/features/hotel/hotel.dart';
 
 abstract class HotelRemoteDataSource {
   Future<HotelModel> getHotels();

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../common/app_colors.dart';
+import '../../../../../common/style/app_colors.dart';
 import '../../../domain/entitites/hotel_entity.dart';
 
 class HotelPriceWidget extends StatelessWidget {

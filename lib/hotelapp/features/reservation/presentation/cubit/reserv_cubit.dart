@@ -1,8 +1,10 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../common/app_constant.dart';
-import '../../../../core/error/failure.dart';
-import '../../domain/usecases/get_reserv.dart';
-import 'reserv_state.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/core/core.dart';
+import 'package:hotel_app/hotelapp/features/reservation/reservation.dart';
+
+part 'reserv_state.dart';
 
 class ReservListCubit extends Cubit<ReservState> {
   final GetReserv getReserv;

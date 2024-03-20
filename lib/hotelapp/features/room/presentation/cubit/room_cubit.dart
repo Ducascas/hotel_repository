@@ -1,9 +1,10 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hotel_app/hotelapp/common/common.dart';
+import 'package:hotel_app/hotelapp/core/core.dart';
+import 'package:hotel_app/hotelapp/features/room/room.dart';
 
-import '../../../../common/app_constant.dart';
-import '../../../../core/error/failure.dart';
-import '../../domain/usecases/get_rooms.dart';
-import 'room_state.dart';
+part 'room_state.dart';
 
 class RoomListCubit extends Cubit<RoomState> {
   final GetRooms getRooms;

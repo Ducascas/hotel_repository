@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../common/app_button_style.dart';
-import '../../../../../common/app_colors.dart';
+import '../../../../../common/style/app_button_style.dart';
+import '../../../../../common/style/app_colors.dart';
 import '../../../domain/entitites/hotel_entity.dart';
 
 class HotelAddressWidget extends StatelessWidget {
